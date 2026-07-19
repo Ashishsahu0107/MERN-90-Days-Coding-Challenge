@@ -5,7 +5,7 @@ const { Pool } = pg;
 // Configure Pool using environment variables
 export const pool = new Pool({
   user: process.env.DB_USER || "postgres",
-  password: process.env.DB_PASSWORD || "your_postgres_password",
+  password: process.env.DB_PASSWORD || "Ashish@1232005",
   host: process.env.DB_HOST || "localhost",
   port: parseInt(process.env.DB_PORT || "5432", 10),
   database: process.env.DB_DATABASE || "restaurant_db",
@@ -40,7 +40,7 @@ export async function initDb() {
     if (count === 0) {
       await client.query(`
         INSERT INTO users (name, email, password) 
-        VALUES ('Ashish', 'ashish@example.com', 'password123');
+        VALUES ('Ashish', 'ashish@gmail.com', 'password123');
       `);
       console.log("🌱 Seeded database with default manager user 'Ashish'");
     }
