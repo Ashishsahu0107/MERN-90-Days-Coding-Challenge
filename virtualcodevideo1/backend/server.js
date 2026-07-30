@@ -6,8 +6,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-const mongoURL =
-  "mongodb+srv://ashishsahu172005_db_user:Ashishsahu1232005@cluster0.yjizpqy.mongodb.net/ashishsahu";
+
 const port = 8000;
 
 const connectDB = async () => {
