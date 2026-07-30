@@ -1,5 +1,5 @@
 {
-  "name": "virtualcodevideo1",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -10,10 +10,10 @@
   "author": "",
   "license": "ISC",
   "type": "module",
-  "devDependencies": {
-    "nodemon": "^3.1.14"
-  },
   "dependencies": {
-    "express": "^5.2.1"
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mongoose": "^9.9.0",
+    "nodemon": "^3.1.14"
   }
 }
